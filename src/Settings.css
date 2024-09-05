@@ -1,0 +1,189 @@
+.settings-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section h2 {
+    color: #ff5a5f;
+    margin-bottom: 15px;
+}
+
+.setting-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.setting-option label {
+    color: #666;
+}
+
+.setting-option select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.change-btn,
+.edit-btn,
+.enable-btn,
+.view-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-btn:hover,
+.edit-btn:hover,
+.enable-btn:hover,
+.view-btn:hover {
+    background-color: #e0484e;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 500px;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-content input[type="password"],
+.modal-content label {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.settings-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.setting-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.setting-option label {
+    display: flex;
+    align-items: center;
+}
+
+.settings-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .settings-container input[type="checkbox"]:checked {
+    background-color: #ff5a5f; 
+    border-color: #ff5a5f;
+  }
+  
+  .settings-container input[type="checkbox"]:checked::before {
+    content: '\2713'; 
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .enable-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+.view-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+
+.modal-content .disable-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+.modal-content .close-btn {
+    background-color: #ccc;
+    color: #333;
+}
