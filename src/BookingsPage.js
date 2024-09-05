@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './BookingsPage.css';
 import logo from './logo.png';
 import BookingDetailsModal from './BookingDetailsModal';
-import {setError} from 'react';
+import { setError } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function BookingsPage() {
