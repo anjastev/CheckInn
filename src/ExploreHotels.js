@@ -209,7 +209,7 @@ function ExploreHotels() {
     </button>
   </div>
    
-   <br></br> <br></br> <br></br> <br></br>
+
 
       <div className="main-content">
         
