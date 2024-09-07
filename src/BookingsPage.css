@@ -107,7 +107,7 @@
     width: 150px;
   }
 
-  //paganation 
+  
 
 .page-container {
     display: flex;
@@ -151,7 +151,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     border: none;
-    //margin-right: 4px;
+   
   }
   
   .prev-page:hover,
@@ -186,7 +186,7 @@
   
   .clear-filters:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(251, 84, 108, 0.5); /* Add a custom focus outline */
+    box-shadow: 0 0 0 2px rgba(251, 84, 108, 0.5);
   }
   
   .clear-filters:disabled {

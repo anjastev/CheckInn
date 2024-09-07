@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './BookingsPage.css';
 import logo from './logo.png';
 import BookingDetailsModal from './BookingDetailsModal';
-import { setError } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 function BookingsPage() {
@@ -15,7 +15,7 @@ function BookingsPage() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const bookingsPerPage = 6;
-
+  const [err, setError] = useState(null);
 
   const navigate = useNavigate(); 
   const handleLogout = () => {
@@ -23,7 +23,7 @@ function BookingsPage() {
   };
 
     useEffect(() => {  
-
+  
       
       const fetchBookings = async () => {
         try { 

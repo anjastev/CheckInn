@@ -49,7 +49,7 @@
 }
 
 
-//responsive 
+
 @media (max-width: 768px) {
     .login-container {
         max-width: 90%;

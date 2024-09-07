@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import './HomePage.css';
 import logo from './logo.png'; 
 import image from './SLN-Blog-8Destinations-1537x952-1.jpg';

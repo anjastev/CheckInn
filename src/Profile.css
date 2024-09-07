@@ -1,4 +1,4 @@
-/* Profile.css */
+
 .profile-container {
    
     margin: 50px auto;
@@ -47,7 +47,6 @@
 .edit-profile-btn {
     display: block;
     width: 150px;
-    //margin: 30px auto;
     padding: 10px 20px;
     background-color: #ff5a5f;
     color: #fff;
@@ -116,7 +115,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    //background-color: rgba(0, 0, 0, 0.5);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +127,7 @@
     border-radius: 10px;
     max-width: 500px;
     width: 100%;
-    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 
 .modal h2 {
