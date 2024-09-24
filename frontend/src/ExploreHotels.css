@@ -354,27 +354,7 @@
 
 
 
-@media (max-width: 1024px) {
-  .main-content {
-    flex-direction: column;
-  }
 
-  .filters-sidebar {
-    position: static;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .hotel-card {
-    flex: 1 1 calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 768px) {
-  .hotel-card {
-    flex: 1 1 100%; 
-  }
-}
 
 .profile-iconse {
   display: flex;
@@ -417,4 +397,84 @@
 
 .profiles-icone{
   margin-top: -400px;
+}
+
+
+//responsive
+
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .filters-sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+  .hotel-card {
+    flex: 1 1 calc(50% - 20px); 
+    margin-bottom: 20px; 
+    transition: transform 0.3s;
+  }
+
+  .hotel-card:hover {
+    transform: scale(1.02); 
+  }
+
+  .card-title {
+    font-size: 18px; 
+  }
+
+  .card-price {
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
+    padding: 15px; 
+  }
+
+  .filters-sidebar {
+    margin-bottom: 30px; 
+  }
+
+  .card-title {
+    font-size: 20px; 
+  }
+
+  .card-price {
+    font-size: 18px; 
+  }
+
+  .button {
+    width: 100%; 
+    padding: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hotel-card {
+    padding: 10px;
+  }
+
+  .filters-sidebar {
+    padding: 10px; 
+  }
+
+  .card-title {
+    font-size: 18px; 
+  }
+
+  .card-price {
+    font-size: 16px; 
+  }
 }

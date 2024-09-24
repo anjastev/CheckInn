@@ -7,20 +7,24 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .settings-container h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
+
 .settings-section {
     margin-bottom: 30px;
 }
+
 
 .settings-section h2 {
     color: #ff5a5f;
     margin-bottom: 15px;
 }
+
 
 .setting-option {
     display: flex;
@@ -29,15 +33,18 @@
     margin-bottom: 15px;
 }
 
+
 .setting-option label {
     color: #666;
 }
+
 
 .setting-option select {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 .change-btn,
 .edit-btn,
@@ -49,6 +56,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .change-btn:hover,
@@ -58,10 +66,11 @@
     background-color: #e0484e;
 }
 
+
 .modal {
     position: fixed;
     top: 0;
-    left: 500px;
+    left: 0; 
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -71,19 +80,22 @@
     z-index: 1000;
 }
 
+
 .modal-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
-    width: 100%;
+    max-width: 90%; 
+    width: 500px;
     text-align: center;
 }
+
 
 .modal-content h2 {
     margin-bottom: 20px;
     color: #333;
 }
+
 
 .modal-content input[type="password"],
 .modal-content label {
@@ -94,6 +106,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 .modal-content button {
     margin: 5px;
@@ -115,11 +128,13 @@
     color: #333;
 }
 
+
 .modal-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 
 .settings-container-form {
     display: flex;
@@ -127,16 +142,6 @@
     align-items: center;
 }
 
-.setting-option {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.setting-option label {
-    display: flex;
-    align-items: center;
-}
 
 .settings-container input[type="checkbox"] {
     appearance: none;
@@ -149,14 +154,14 @@
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-  }
-  
-  .settings-container input[type="checkbox"]:checked {
+}
+
+.settings-container input[type="checkbox"]:checked {
     background-color: #ff5a5f; 
     border-color: #ff5a5f;
-  }
-  
-  .settings-container input[type="checkbox"]:checked::before {
+}
+
+.settings-container input[type="checkbox"]:checked::before {
     content: '\2713'; 
     color: #fff;
     font-size: 16px;
@@ -164,10 +169,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 
-  .enable-btn {
+.enable-btn {
     background-color: #ff5a5f;
     color: #fff;
 }
@@ -186,4 +191,58 @@
 .modal-content .close-btn {
     background-color: #ccc;
     color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .settings-container {
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    .setting-option {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .setting-option label {
+        margin-bottom: 5px; 
+    }
+
+    .modal-content {
+        padding: 15px; 
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-container {
+        padding: 10px; 
+    }
+
+    .settings-section h2 {
+        font-size: 1.2rem; 
+    }
+
+    .setting-option {
+        margin-bottom: 10px; 
+    }
+
+    .setting-option select {
+        width: 100%; 
+    }
+
+    .modal-content {
+        padding: 10px; 
+    }
+
+    .modal-content input[type="password"],
+    .modal-content label {
+        width: calc(100% - 10px); 
+    }
+
+    .modal-content button {
+        padding: 8px 15px; 
+        font-size: 0.8rem; 
+    }
 }

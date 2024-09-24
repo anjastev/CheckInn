@@ -1,12 +1,11 @@
-
 .profile-container {
-   
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1000px;
+    width: 1000px; /* Consider using a max-width instead of fixed width */
+    max-width: 90%; /* Make it responsive */
 }
 
 .profile-container h1 {
@@ -54,7 +53,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 120px;
+    margin: 20px auto; /* Center the button */
 }
 
 .edit-profile-btn:hover {
@@ -109,13 +108,13 @@
     background-color: #f9f9f9;
     border-radius: 5px;
 }
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +126,6 @@
     border-radius: 10px;
     max-width: 500px;
     width: 100%;
-   
 }
 
 .modal h2 {
@@ -182,4 +180,72 @@
 
 .cancel-btn:hover {
     background-color: #bbb;
+}
+
+//responsive
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+        max-width: 90%; 
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin: 0 auto 20px;
+    }
+
+    .edit-profile-btn {
+        margin: 20px auto 0; 
+        width: 100%; 
+        max-width: 200px; 
+    }
+
+    .profile-section ul li {
+        font-size: 14px; 
+    }
+
+    .profile-section h3 {
+        font-size: 22px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .profile-details h2 {
+        font-size: 18px; 
+    }
+
+    .profile-section h3 {
+        font-size: 20px; 
+    }
+
+    .profile-section ul li {
+        padding: 8px; 
+    }
+
+    .edit-profile-btn {
+        padding: 12px 15px;
+        font-size: 14px; 
+    }
+
+    .modal {
+        padding: 15px;
+    }
+
+    .modal h2 {
+        font-size: 20px; 
+    }
+
+    .edit-profile-form input {
+        font-size: 14px; 
+    }
 }

@@ -249,3 +249,150 @@
     max-width: 800px;
     border-radius: 8px;
   }
+
+  //responsive
+
+  
+@media (max-width: 1200px) {
+  .our-story,
+  .our-values,
+  .team-section,
+  .mission-statement {
+    width: 90%;
+  }
+
+  .about-footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  .value-item,
+  .team-member {
+    flex: 1 1 100%;
+    margin: 10px;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .call-to-action h2 {
+    font-size: 24px;
+  }
+
+  .call-to-action p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .virtual-tour h2 {
+    font-size: 28px;
+  }
+
+  .virtual-tour video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 60px 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .value-item,
+  .team-member {
+    margin: 10px 0;
+  }
+
+  .our-story,
+  .our-values,
+  .team-section,
+  .mission-statement {
+    padding: 20px 10px;
+  }
+
+  .call-to-action {
+    padding: 30px 10px;
+  }
+
+  .call-to-action h2 {
+    font-size: 20px;
+  }
+
+  .call-to-action p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .hero-section h1 {
+    font-size: 36px;
+  }
+  .our-story,
+  .our-values,
+  .team-section,
+  .mission-statement {
+    width: 90%;
+  }
+  .value-item, .team-member {
+    flex: 1 1 45%;
+  }
+  .about-footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 10px;
+  }
+  .hero-section h1 {
+    font-size: 28px;
+  }
+  .hero-section p {
+    font-size: 16px;
+  }
+  .value-item, .team-member {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+  .our-story,
+  .our-values,
+  .team-section,
+  .mission-statement {
+    padding: 20px 10px;
+  }
+}

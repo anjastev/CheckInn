@@ -164,6 +164,8 @@ h1 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0 auto; 
+    max-width: 1200px;
   }
   
   .destination-item {
@@ -173,6 +175,8 @@ h1 {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 auto;
   }
   
   .destination-item img {
@@ -334,60 +338,6 @@ h1 {
 
 
 
-@media (max-width: 768px) {
-    .home-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .search-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .search-bar input {
-        width: 100%;
-        max-width: none;
-    }
-
-    .home-section {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .destinations-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .destination-item {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    .footer-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-nav a {
-        font-size: 16px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .home-header {
-        padding: 20px 10px; 
-    }
-
-    .search-bar input {
-        font-size: 14px; 
-    }
-
-    .search-bar button {
-        font-size: 14px;
-    }
-}
 
 
 .hero-section {
@@ -531,4 +481,114 @@ h1 {
 
 .profile-icons a:hover img {
     filter: brightness(0.8);
+}
+
+
+//responsive
+
+@media (max-width: 768px) {
+  .home-header {
+    padding: 20px 5%;
+}
+    .home-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .home-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .destinations-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-item {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav a {
+        font-size: 16px; 
+    }
+
+    .hero-content h1 {
+      font-size: 28px; 
+    }
+  
+    .hero-content p {
+      font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+      padding: 10px 2%; 
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .search-bar button {
+      width: 100%; 
+  }
+
+  .destination-item {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+  .popular-destinations h2 {
+    font-size: 24px; 
+}
+  .overlay h3 {
+      font-size: 18px; 
+  }
+
+  .overlay p {
+      font-size: 12px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 20px; 
+  }
+
+  .testimonial-item {
+    margin: 10px; 
+    font-size: 14px; 
+  }
+
+  .footer-content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .social-media a {
+    margin: 5px; 
+  }
+
+  .newsletter input {
+    width: 80%; 
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }

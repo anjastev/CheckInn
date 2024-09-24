@@ -340,3 +340,80 @@
   max-width: 150px; 
 }
 
+
+//responsive
+
+@media (max-width: 1024px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+
+  .contact-info h2,
+  .contact-map h2 {
+    font-size: 28px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .faq h2 {
+    font-size: 24px;
+  }
+
+  .contact-form h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .contact-info h2,
+  .contact-map h2 {
+    font-size: 24px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .faq h2 {
+    font-size: 22px;
+  }
+
+  .contact-form h2 {
+    font-size: 20px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 28px;
+  }
+
+  .contact-info h2,
+  .contact-map h2 {
+    font-size: 22px;
+  }
+
+  .contact-info p,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .faq h2 {
+    font-size: 20px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
