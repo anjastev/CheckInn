@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './ExploreHotels.css';
 import { FaStar, FaMapMarkerAlt, FaFilter, FaSearch } from 'react-icons/fa';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import logo from './logo.png'; 
 import { useNavigate } from 'react-router-dom';
 
 
@@ -145,29 +144,7 @@ function ExploreHotels() {
     }
   };
 
-  const specialOffers = [
-    {
-      id: 1,
-      title: 'Summer Sale!',
-      description: 'Up to 50% off on select hotels.',
-      imageUrl: 'pictures/images (1).jpg',
-      link: '#'
-    },
-    {
-      id: 2,
-      title: 'Last Minute Deals',
-      description: 'Book within 24 hours and save 30%.',
-      imageUrl: 'pictures/images (2).jpg',
-      link: '#'
-    },
-    {
-      id: 3,
-      title: 'Weekend Getaway',
-      description: 'Exclusive weekend rates on luxury hotels.',
-      imageUrl: 'pictures/images (3).jpg',
-      link: '#'
-    }
-  ];
+
   
 
   return (
@@ -179,7 +156,7 @@ function ExploreHotels() {
         <a href="/settings" className="settings-icone">
             <img src="pictures/icons8-settings-48.png" alt="Settings"/>
         </a>
-        <a href="#" className="logout-icone" onClick={handleLogout}>
+        <a href="/logout" className="logout-icone" onClick={handleLogout}>
             <img src="pictures/icons8-log-out-48.png" alt="Log Out"/>
         </a>        
     </div>

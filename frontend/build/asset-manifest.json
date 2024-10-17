@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6447c7a2.css",
-    "main.js": "/static/js/main.1cccf092.js",
+    "main.js": "/static/js/main.e77b7af4.js",
     "static/js/453.33a489f9.chunk.js": "/static/js/453.33a489f9.chunk.js",
     "static/media/SLN-Blog-8Destinations-1537x952-1.jpg": "/static/media/SLN-Blog-8Destinations-1537x952-1.439559047e8dd6dd86b5.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
@@ -15,11 +15,11 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
     "main.6447c7a2.css.map": "/static/css/main.6447c7a2.css.map",
-    "main.1cccf092.js.map": "/static/js/main.1cccf092.js.map",
+    "main.e77b7af4.js.map": "/static/js/main.e77b7af4.js.map",
     "453.33a489f9.chunk.js.map": "/static/js/453.33a489f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6447c7a2.css",
-    "static/js/main.1cccf092.js"
+    "static/js/main.e77b7af4.js"
   ]
 }

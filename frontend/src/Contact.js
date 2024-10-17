@@ -190,7 +190,7 @@ function Contact() {
 
       <footer className="about-footer">
         <p>&copy; 2024 CheckInn. All rights reserved.</p>
-        <p>Website by <a href="#">Anja Stevkovska</a></p>
+        <p>Website by <a href="https://my-cv-app-omega.vercel.app/">Anja Stevkovska</a></p>
       </footer>
     </div>
   );

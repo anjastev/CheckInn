@@ -40,7 +40,7 @@ function HomePage() {
         <a href="/settings" className="settings-icon">
             <img src="pictures/icons8-settings-48.png" alt="Settings"/>
         </a>
-        <a href="#" className
+        <a href="/logout" className
         ="logout-icon" onClick={handleLogout}>
             <img src="pictures/icons8-log-out-48.png" alt="Log Out"/>
         </a>
@@ -189,9 +189,9 @@ function HomePage() {
       <footer className="home-footer">
   <div className="footer-content">
     <div className="social-media">
-      <a href="#"><i className="fab fa-facebook-f"></i></a>
-      <a href="#"><i className="fab fa-twitter"></i></a>
-      <a href="#"><i className="fab fa-instagram"></i></a>
+      <i className="fab fa-facebook-f"></i>
+      <i className="fab fa-twitter"></i>
+      <i className="fab fa-instagram"></i>
     </div>
 
     <div className="newsletter">
@@ -213,7 +213,7 @@ function HomePage() {
 
     <div className="footer-bottom">
       <p>&copy; 2024 CheckInn. All rights reserved.</p>
-      <p className='pf'>Website by <a href="#">Anja Stevkovska</a></p>
+      <p className='pf'>Website by <a href="https://my-cv-app-omega.vercel.app/">Anja Stevkovska</a></p>
     </div>
   </div>
 </footer>

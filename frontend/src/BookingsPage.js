@@ -15,7 +15,7 @@ function BookingsPage() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const bookingsPerPage = 6;
-  const [err, setError] = useState(null);
+  const [setError] = useState(null);
 
   const navigate = useNavigate(); 
   const handleLogout = () => {
@@ -29,107 +29,97 @@ function BookingsPage() {
         try { 
     setTimeout(() => {
       setBookings([
-      {
-        id: 1,
-        hotelName: 'Luxury Hotel',
-        checkIn: '2024-09-01',
-        checkOut: '2024-09-07',
-        guests: 2,
-        price: '$1200',
-        image: 'pictures/download (6).jpg',
-        bookingId: 'BK12345',
-        contactNumber: '+1 234 567 890',
-      },
-      {
-        id: 2,
-        hotelName: 'Beachside Resort',
-        checkIn: '2024-10-15',
-        checkOut: '2024-10-20',
-        guests: 4,
-        price: '$2000',
-        image: 'pictures/download (8).jpg',
-        bookingId: 'BK67890',
-        contactNumber: '+1 234 567 891',
-      },
-      {
-        id: 3,
-        hotelName: 'Mountain Retreat',
-        checkIn: '2024-11-05',
-        checkOut: '2024-11-10',
-        guests: 3,
-        price: '$1500',
-        image: 'pictures/download (7).jpg',
-        bookingId: 'BK11223',
-        contactNumber: '+1 234 567 892',
-      },
-      {
-        id: 4,
-        hotelName: 'Luxury Hotel',
-        checkIn: '2024-09-01',
-        checkOut: '2024-09-07',
-        guests: 2,
-        price: '$1200',
-        image: 'pictures/download (6).jpg',
-        bookingId: 'BK12345',
-        contactNumber: '+1 234 567 890',
-      },
-      {
+        {
+          id: 1,
+          hotelName: 'Hotel Aleksandar Palace',
+          checkIn: '2024-09-01',
+          checkOut: '2024-09-07',
+          guests: 2,
+          price: '$1000',
+          image: 'pictures/ap.jpg',
+          bookingId: 'BK10001',
+          contactNumber: '+389 2 123 4567',
+        },
+        {
+          id: 2,
+          hotelName: 'Hotel Senigallia',
+          checkIn: '2024-10-15',
+          checkOut: '2024-10-20',
+          guests: 4,
+          price: '$1500',
+          image: 'pictures/tino.jpg',
+          bookingId: 'BK10002',
+          contactNumber: '+389 2 765 4321',
+        },
+        {
+          id: 3,
+          hotelName: 'Hotel City Park',
+          checkIn: '2024-11-05',
+          checkOut: '2024-11-10',
+          guests: 3,
+          price: '$1200',
+          image: 'pictures/gor.jpg',
+          bookingId: 'BK10003',
+          contactNumber: '+389 2 345 6789',
+        },
+        {
+          id: 4,
+          hotelName: 'Hotel Porta',
+          checkIn: '2024-09-10',
+          checkOut: '2024-09-15',
+          guests: 2,
+          price: '$800',
+          image: 'pictures/arka.jpg',
+          bookingId: 'BK10004',
+          contactNumber: '+389 2 234 5678',
+        },
+        {
         id: 5,
-        hotelName: 'Beachside Resort',
-        checkIn: '2024-10-15',
-        checkOut: '2024-10-20',
-        guests: 4,
-        price: '$2000',
-        image: 'pictures/download (8).jpg',
-        bookingId: 'BK67890',
-        contactNumber: '+1 234 567 891',
+        hotelName: 'Hotel Aleksandar Palace',
+        checkIn: '2024-09-01',
+        checkOut: '2024-09-07',
+        guests: 2,
+        price: '$1000',
+        image: 'pictures/ap.jpg',
+        bookingId: 'BK10001',
+        contactNumber: '+389 2 123 4567',
       },
       {
         id: 6,
-        hotelName: 'Mountain Retreat',
-        checkIn: '2024-11-05',
-        checkOut: '2024-11-10',
-        guests: 3,
-        price: '$1500',
-        image: 'pictures/download (7).jpg',
-        bookingId: 'BK11223',
-        contactNumber: '+1 234 567 892',
-      },
-      {
-        id: 7,
-        hotelName: 'Luxury Hotel',
-        checkIn: '2024-09-01',
-        checkOut: '2024-09-07',
-        guests: 2,
-        price: '$1200',
-        image: 'pictures/download (6).jpg',
-        bookingId: 'BK12345',
-        contactNumber: '+1 234 567 890',
-      },
-      {
-        id: 8,
-        hotelName: 'Beachside Resort',
+        hotelName: 'Hotel Senigallia',
         checkIn: '2024-10-15',
         checkOut: '2024-10-20',
         guests: 4,
-        price: '$2000',
-        image: 'pictures/download (8).jpg',
-        bookingId: 'BK67890',
-        contactNumber: '+1 234 567 891',
+        price: '$1500',
+        image: 'pictures/tino.jpg',
+        bookingId: 'BK10002',
+        contactNumber: '+389 2 765 4321',
       },
       {
-        id: 9,
-        hotelName: 'Mountain Retreat',
+        id: 7,
+        hotelName: 'Hotel City Park',
         checkIn: '2024-11-05',
         checkOut: '2024-11-10',
         guests: 3,
-        price: '$1500',
-        image: 'pictures/download (7).jpg',
-        bookingId: 'BK11223',
-        contactNumber: '+1 234 567 892',
+        price: '$1200',
+        image: 'pictures/gor.jpg',
+        bookingId: 'BK10003',
+        contactNumber: '+389 2 345 6789',
       },
+      {
+        id: 8,
+        hotelName: 'Hotel Porta',
+        checkIn: '2024-09-10',
+        checkOut: '2024-09-15',
+        guests: 2,
+        price: '$800',
+        image: 'pictures/arka.jpg',
+        bookingId: 'BK10004',
+        contactNumber: '+389 2 234 5678',
+      }
 
       ]);
+      
       setLoading(false);
     }, 1000);
   } catch (err) {
@@ -139,7 +129,7 @@ function BookingsPage() {
 };
 
 fetchBookings();
-}, []);
+}, [setError]);
 
     const sortedBookings = bookings.sort((a, b) => {
       if (sortOption === 'price') {
@@ -162,13 +152,6 @@ fetchBookings();
       (filterGuests === '' || booking.guests >= (filterGuests === '5' ? 5 : parseInt(filterGuests)))
     );
 
-
-    const indexOfLastBooking = currentPage * bookingsPerPage;
-    const indexOfFirstBooking = indexOfLastBooking - bookingsPerPage;
-    const currentBookings = filteredBookings.slice(indexOfFirstBooking, indexOfLastBooking);
-    
-  
-  
   const handleSearchChange = (event) => {
       setSearchQuery(event.target.value);
     };
@@ -220,7 +203,7 @@ fetchBookings();
         <a href="/settings" className="settings-iconb">
             <img src="pictures/icons8-settings-48.png" alt="Settings"/>
         </a>
-        <a href="#" className="logout-iconb" onClick={handleLogout}>
+        <a href="/logout" className="logout-iconb" onClick={handleLogout}>
             <img src="pictures/icons8-log-out-48.png" alt="Log Out"/>
         </a>        
     </div>

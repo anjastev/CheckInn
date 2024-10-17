@@ -51,9 +51,9 @@ const Profile = () => {
             <div className="profile-section">
                 <h3>Saved Hotels</h3>
                 <ul>
-                    <li><a href="#">Grand Palace Hotel</a></li>
-                    <li><a href="#">Sunny Beach Resort</a></li>
-                    <li><a href="#">Downtown Boutique Hotel</a></li>
+                    <li>Grand Palace Hotel</li>
+                    <li>Sunny Beach Resort</li>
+                    <li>Downtown Boutique Hotel</li>
                 </ul>
             </div>
 
@@ -62,7 +62,7 @@ const Profile = () => {
                     <ul>
                         <li>Visa ending in 1234</li>
                         <li>MasterCard ending in 5678</li>
-                        <li><a href="#">Add New Payment Method</a></li>
+                        <li>Add New Payment Method</li>
                     </ul>
                 </div>
 
@@ -75,9 +75,9 @@ const Profile = () => {
                 <div className="profile-section">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li>Contact Support</li>
+                        <li>FAQ</li>
+                        <li>Terms & Conditions</li>
                     </ul>
                 </div>
             </div>
