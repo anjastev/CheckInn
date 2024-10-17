@@ -1,8 +1,8 @@
 
 body {
     background-color: #f5f5f5;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 .home-header {
     background-color: #f5f5f5;
     padding: 20px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ body {
 
 .home-nav a {
     text-decoration: none;
-    color: #333333;
+    color: #333;
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -63,7 +63,7 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333333;
+    color: #333;
 }
 
 
@@ -85,10 +85,9 @@ h1 {
 }
 
 .search-bar button {
-   
     border: none;
     background-color: #ff5a5f;
-    color: #ffffff;
+    color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -111,10 +110,10 @@ h1 {
 }
 
 .home-section {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
     margin-bottom: 40px;
     text-align: center;
     width: 800px;
@@ -124,18 +123,18 @@ h1 {
 .home-section h2 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #333333;
+    color: #333;
 }
 
 .home-section p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #666666;
+    color: #666;
 }
 
 .home-button {
     background-color: #ff5a5f;
-    color: #ffffff;
+    color: #fff;
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -174,7 +173,7 @@ h1 {
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     text-align: center;
     flex: 1 1 auto;
   }
@@ -196,7 +195,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(0 0 0 / 60%);
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -233,7 +232,7 @@ h1 {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .footer-nav a {
@@ -281,12 +280,12 @@ h1 {
 }
 
 .newsletter {
-    background-color: #444444;
+    background-color: #444;
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 }
 
 .newsletter h4 {
@@ -308,7 +307,7 @@ h1 {
     padding: 10px 20px;
     border: none;
     background-color: #ff5a5f;
-    color: #ffffff;
+    color: #fff;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -322,7 +321,7 @@ h1 {
 .footer-bottom {
     margin-top: 30px;
     font-size: 14px;
-    color: #888888;
+    color: #888;
     margin-left: 700px;
 }
 
@@ -407,7 +406,7 @@ h1 {
   
   .testimonials-section-h2 {
     font-size: 28px;
-    color: #333333;
+    color: #333;
     margin-bottom: 30px;
     margin-left: 650px;
   }
@@ -423,7 +422,7 @@ h1 {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
     max-width: 300px;
     text-align: left;
   }
@@ -448,15 +447,13 @@ h1 {
   
   .customer-info span {
     font-weight: bold;
-    color: #333333;
+    color: #333;
   }
   
 
 
 
   .profile-icons {
-    display: flex;
-    align-items: center;
     gap: 15px; 
     display: flex;
     justify-content: space-between;
@@ -484,12 +481,13 @@ h1 {
 }
 
 
-//responsive
+
 
 @media (max-width: 768px) {
   .home-header {
     padding: 20px 5%;
 }
+
     .home-nav ul {
         flex-direction: column;
         gap: 10px;
@@ -555,9 +553,11 @@ h1 {
       max-width: 100%;
       margin: 10px 0;
   }
+
   .popular-destinations h2 {
     font-size: 24px; 
 }
+
   .overlay h3 {
       font-size: 18px; 
   }

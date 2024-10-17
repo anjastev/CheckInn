@@ -35,7 +35,7 @@
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     overflow: hidden;
   }
   
@@ -169,12 +169,12 @@
 
   .clear-filters {
     background-color: #ff5a5f; 
-    color: #ffffff; 
+    color: #fff; 
     border: none; 
     border-radius: 4px; 
     padding: 10px 20px; 
     font-size: 14px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: Roboto, sans-serif; 
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.2s; 
   }
@@ -186,7 +186,7 @@
   
   .clear-filters:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(251, 84, 108, 0.5);
+    box-shadow: 0 0 0 2px rgb(251 84 108 / 50%);
   }
   
   .clear-filters:disabled {
@@ -237,7 +237,7 @@
   }
 
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
   .logo-container {
     bottom: 300px;
   }
@@ -284,7 +284,7 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 601px) and  (max-width: 1024) {
   .logo-container {
     bottom: 400px;
   }
@@ -330,7 +330,7 @@
 }
 
 
-@media (min-width: 1025px) {
+@media (max-width: 1025px) {
   .logo-container {
     bottom: 500px;
   }

@@ -3,9 +3,9 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1000px; /* Consider using a max-width instead of fixed width */
-    max-width: 90%; /* Make it responsive */
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    width: 1000px;
+    max-width: 90%; 
 }
 
 .profile-container h1 {
@@ -182,7 +182,7 @@
     background-color: #bbb;
 }
 
-//responsive
+
 @media (max-width: 768px) {
     .profile-container {
         padding: 15px;

@@ -2,7 +2,7 @@
 
 
 .explore-hotels {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   color: #333;
   background-color: #f5f5f5;
 }
@@ -82,7 +82,7 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
   position: sticky;
   top: 20px;
   height: fit-content;
@@ -136,8 +136,6 @@
 
 .filter-group input[type="checkbox"] {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   width: 20px;
   height: 20px;
   background-color: #e0e0e0;
@@ -206,7 +204,7 @@
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
   transition: transform 0.3s ease;
   flex: 1 1 calc(33.333% - 20px); 
   box-sizing: border-box;
@@ -400,7 +398,7 @@
 }
 
 
-//responsive
+
 
 
 @media (max-width: 1024px) {
@@ -414,7 +412,7 @@
     margin-bottom: 20px;
     padding: 15px; 
     background-color: #f9f9f9; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%); 
   }
 
   .hotel-card {

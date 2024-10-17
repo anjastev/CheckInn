@@ -51,7 +51,7 @@ function Contact() {
           <span className="contact-icon">✉️</span> info@example.com
         </li>
         <li>
-          <span className="contact-icon">📍</span> 123 Main Street, Anytown, USA
+          <span className="contact-icon">📍</span> 11th October Street, Skopje, Macedonia
         </li>
       </ul>
         </section>
@@ -60,7 +60,7 @@ function Contact() {
   <h2>Our Location</h2>
   <div className="map-container">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9616460456863!2d-122.08424968469013!3d37.42199977982501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb1b9a7434e3%3A0x78b8c5c7a6c2b2b3!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614977497004!5m2!1sen!2sus"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.7965004658943!2d21.427833915495777!3d41.99734637921417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415f7b7c5a36d%3A0x4fda9bc6a9fe8e78!2s11th%20October%20Street%2C%20Skopje!5e0!3m2!1sen!2smk!4v1697530141234!5m2!1sen!2smk"
       width="100%"
       height="450"
       allowFullScreen=""

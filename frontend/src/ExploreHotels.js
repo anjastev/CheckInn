@@ -25,65 +25,64 @@ function ExploreHotels() {
   const hotels = [
     {
       id: 1,
-      name: 'Hotel Sunshine',
-      location: 'Miami, FL',
+      name: 'Hotel Aleksandar Palace',
+      location: 'Skopje, North Macedonia',
       price: 120,
       rating: 4.5,
       distance: 0.5,
       amenities: ['Free Wi-Fi', 'Pool', 'Spa'],
-      imageUrl: 'pictures/download (6).jpg',
-      latitude: 25.7617, 
-      longitude: -80.1918 
+      imageUrl: 'pictures/ap.jpg',
+      latitude: 41.9981, 
+      longitude: 21.4254 
     },
     {
       id: 2,
-      name: 'Mountain View Resort',
-      location: 'Aspen, CO',
+      name: 'Hotel Drim',
+      location: 'Struga, North Macedonia',
       price: 250,
       rating: 4.8,
       distance: 2.0,
-      amenities: ['Breakfast Included', 'Skiing', 'Hot Tub'],
-      imageUrl: 'pictures/download (7).jpg',
-      latitude: 39.1911, 
-      longitude: -106.8175 
+      amenities: ['Breakfast Included', 'Beach Access', 'Lake View'],
+      imageUrl: 'pictures/drim.jpg',
+      latitude: 41.1777, 
+      longitude: 20.6766 
     },
     {
       id: 3,
-      name: 'Beachside Inn',
-      location: 'Malibu, CA',
+      name: 'Inex Gorica',
+      location: 'Ohrid, North Macedonia',
       price: 180,
       rating: 4.2,
       distance: 1.2,
-      amenities: ['Ocean View', 'Free Parking', 'Pet Friendly'],
-      imageUrl: 'pictures/download (8).jpg',
-      latitude: 34.0259, 
-      longitude: -118.7798 
+      amenities: ['Lake View', 'Free Parking', 'Pet Friendly'],
+      imageUrl: 'pictures/gor.jpg',
+      latitude: 41.1220, 
+      longitude: 20.8016 
     },
     {
       id: 4,
-      name: 'Urban Oasis',
-      location: 'New York, NY',
+      name: 'Hotel Arka',
+      location: 'Skopje, North Macedonia',
       price: 220,
       rating: 4.7,
       distance: 0.8,
       amenities: ['Rooftop Bar', 'Gym', 'Free Wi-Fi'],
-      imageUrl: 'pictures/download (9).jpg',
-      latitude: 40.7128, 
-      longitude: -74.0060 
+      imageUrl: 'pictures/arka.jpg',
+      latitude: 41.9991, 
+      longitude: 21.4343 
     },
     {
       id: 5,
-      name: 'Desert Mirage',
-      location: 'Phoenix, AZ',
+      name: 'Hotel Tino',
+      location: 'Ohrid, North Macedonia',
       price: 150,
       rating: 4.3,
       distance: 3.5,
-      amenities: ['Pool', 'Golf Course', 'Spa'],
-      imageUrl: 'pictures/download (10).jpg',
-      latitude: 33.4484, 
-      longitude: -112.0740 
+      amenities: ['Pool', 'Restaurant', 'Spa'],
+      imageUrl: 'pictures/tino.jpg',
+      latitude: 41.1169, 
+      longitude: 20.7990 
     }
-    
   ];
 
   
@@ -395,11 +394,11 @@ function ExploreHotels() {
 
       <div className="interactive-map">
         <h2 className='maps'>Explore Hotels on the Map</h2>
-        <MapContainer center={[37.7749, -122.4194]} zoom={4} style={{ height: '500px', width: '100%' }}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
+        <MapContainer center={[41.9981, 21.4254]} zoom={7} style={{ height: '500px', width: '100%' }}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
           {hotels.map((hotel) => (
             <Marker
               key={hotel.id}
